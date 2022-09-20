@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu"></div>
+    <script src="./index.js"></script>
+    <script>
+
+        // $.get('http://www.e.com/data.json?age=18&tel=123',function(res){
+        //     console.log(res);
+        // })
+
+        // $.post('http://www.e.com/data.json',{age:18,tel:123},function(res){
+        //     console.log(res);
+        // })
+
+        $.ajax({
+            url: 'http://www.e.com/data.json',
+            type: 'POST',
+            data: { age: 18, tel: 123 },
+            success: function (res) {
+                var _deepData = deepData(res)
+                var _deepDom = deepDom(_deepData)
+                document.querySelectorAll('.menu')[0].innerHTML = _deepDom
+
+                var _flatData = flatData(_deepData)
+                var _sortData = sortData(_flatData)
+                console.log(_sortData);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+
+        function deepData(arr) {
+            var resule = []
+            var map = arr.reduce((pre, cur) => {
+                pre[cur.id] = cur
+                return pre
+            }, [])
+
+            for (let item of arr) {
+                if (item.parentId === 0) {
+                    resule.push(item)
+                    continue
+                }
+                if (item.parentId in map) {
+                    var parent = map[item.parentId]
+                    parent.children = parent.children || []
+                    parent.children.push(item)
+                }
+            }
+            return resule
+        }
+
+        function deepDom(arr) {
+            var str = '<ul>'
+            for (let item of arr) {
+                str += `<li>${item.name}</li>`
+                if (item.children) {
+                    str += deepDom(item.children)
+                }
+            }
+            return str += '</ul>'
+        }
+
+        function flatData(arr) {
+            return arr.reduce((pre, cur) => {
+                 const {id,iconType,keyy,name,parentId,type,children=[]} = cur
+               return pre.concat([{id,iconType,keyy,name,parentId,type}],flatData(children))
+            },[])
+        }
+
+        function sortData(arr){
+           return arr.sort(sortArr)
+        }
+
+        function sortArr(a,b){
+             return a.id-b.id
+        }
+
+
+        var arr1 = [...Array(100)].map((i,index)=>index+1)
+        var arr2 = new Array(100).fill(0).map((i,index)=>index+1)
+        var arr3 = Array.from(Array(100)).map((i,index)=>index+1)
+        console.log(arr1);
+        console.log(arr2);
+        console.log(arr3);
+
+    </script>
+</body>
+
+</html>

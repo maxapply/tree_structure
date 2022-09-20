@@ -1,0 +1,313 @@
+[{
+    "id": 1,
+    "name": "订单管理",
+    "type": "导航",
+    "iconType": "shopping-cart",
+    "parentId": 0,
+    "keyy": "order"
+},
+{
+    "id": 2,
+    "name": "运输管理",
+    "type": "导航",
+    "iconType": "car",
+    "parentId": 0,
+    "keyy": "transport"
+},
+{
+    "id": 3,
+    "name": "查验管理",
+    "type": "导航",
+    "iconType": "eye-o",
+    "parentId": 0,
+    "keyy": "check"
+},
+{
+    "id": 4,
+    "name": "后续监管",
+    "type": "导航",
+    "iconType": "pie-chart",
+    "parentId": 0,
+    "keyy": "hxjg"
+},
+{
+    "id": 5,
+    "name": "风险评估申请",
+    "type": "导航",
+    "iconType": "schedule",
+    "parentId": 0,
+    "keyy": "fengping"
+},
+{
+    "id": 6,
+    "name": "收发货管理",
+    "type": "导航",
+    "iconType": "gift",
+    "parentId": 0,
+    "keyy": "receiptAndSend"
+},
+{
+    "id": 7,
+    "name": "用户注册管理",
+    "type": "导航",
+    "iconType": "usergroup-add",
+    "parentId": 0,
+    "keyy": "user"
+},
+{
+    "id": 8,
+    "name": "特殊物品追溯",
+    "type": "导航",
+    "iconType": "file",
+    "parentId": 0,
+    "keyy": "trace"
+},
+{
+    "id": 10,
+    "name": "系统管理",
+    "type": "导航",
+    "iconType": "schedule",
+    "parentId": 0,
+    "keyy": "SM"
+},
+{
+    "id": 11,
+    "name": "专家库管理",
+    "type": "导航",
+    "iconType": "schedule",
+    "parentId": 0,
+    "keyy": "submit"
+},
+{
+    "id": 12,
+    "name": "留言",
+    "type": "导航",
+    "iconType": "credit-card",
+    "parentId": 0,
+    "keyy": "note"
+},
+{
+    "id": 13,
+    "name": "企业订单列表",
+    "type": "页面",
+    "iconType": "bars",
+    "parentId": 1,
+    "keyy": "list"
+},
+{
+    "id": 14,
+    "name": "未提交申请单",
+    "type": "页面",
+    "iconType": "schedule",
+    "parentId": 5,
+    "keyy": "submit"
+},
+{
+    "id": 15,
+    "name": "选择专家组",
+    "type": "页面",
+    "iconType": "exception",
+    "parentId": 5,
+    "keyy": "expertgroup"
+},
+{
+    "id": 16,
+    "name": "审批中申请单",
+    "type": "页面",
+    "iconType": "exception",
+    "parentId": 5,
+    "keyy": "audit"
+},
+{
+    "id": 17,
+    "name": "未处理申请单",
+    "type": "页面",
+    "iconType": "exception",
+    "parentId": 5,
+    "keyy": "audit2"
+},
+{
+    "id": 18,
+    "name": "已处理完成申请单",
+    "type": "页面",
+    "iconType": "exception",
+    "parentId": 5,
+    "keyy": "complete"
+},
+{
+    "id": 19,
+    "name": "收货登记",
+    "type": "页面",
+    "iconType": "verticle-right",
+    "parentId": 6,
+    "keyy": "receipt"
+},
+{
+    "id": 20,
+    "name": "发货登记",
+    "type": "页面",
+    "iconType": "verticle-left",
+    "parentId": 6,
+    "keyy": "send"
+},
+{
+    "id": 21,
+    "name": "用户审核",
+    "type": "页面",
+    "iconType": "solution",
+    "parentId": 7,
+    "keyy": "audit"
+},
+{
+    "id": 22,
+    "name": "用户管理",
+    "type": "页面",
+    "iconType": "database",
+    "parentId": 10,
+    "keyy": "managerUser"
+},
+{
+    "id": 23,
+    "name": "角色管理",
+    "type": "页面",
+    "iconType": "edit",
+    "parentId": 10,
+    "keyy": "managerRole"
+},
+{
+    "id": 24,
+    "name": "参数管理",
+    "type": "页面",
+    "iconType": "edit",
+    "parentId": 10,
+    "keyy": "managerParmar"
+},
+{
+    "id": 25,
+    "name": "运输追溯",
+    "type": "页面",
+    "iconType": "car",
+    "parentId": 8,
+    "keyy": "transport-trace"
+},
+{
+    "id": 26,
+    "name": "统计",
+    "type": "页面",
+    "iconType": "database",
+    "parentId": 5,
+    "keyy": "count2"
+},
+{
+    "id": 27,
+    "name": "运营运输任务单",
+    "type": "页面",
+    "iconType": "mail",
+    "parentId": 2,
+    "keyy": "transport-task"
+},
+{
+    "id": 29,
+    "name": "录入专家",
+    "type": "页面",
+    "iconType": "exception",
+    "parentId": 11,
+    "keyy": "experts"
+},
+{
+    "id": 30,
+    "name": "监管列表",
+    "type": "页面",
+    "iconType": "eye-o",
+    "parentId": 4,
+    "keyy": "hxjgList"
+},
+{
+    "id": 31,
+    "name": "使用登记",
+    "type": "页面",
+    "iconType": "edit",
+    "parentId": 4,
+    "keyy": "useLog2"
+},
+{
+    "id": 32,
+    "name": "查验任务分配",
+    "type": "页面",
+    "iconType": "notification",
+    "parentId": 3,
+    "keyy": "distribute"
+},
+{
+    "id": 33,
+    "name": "查验任务处理",
+    "type": "页面",
+    "iconType": "check-circle",
+    "parentId": 3,
+    "keyy": "resolve"
+},
+{
+    "id": 34,
+    "name": "查验任务统计",
+    "type": "页面",
+    "iconType": "database",
+    "parentId": 3,
+    "keyy": "count"
+},
+{
+    "id": 36,
+    "name": "查验通知管理",
+    "type": "页面",
+    "iconType": "notification",
+    "parentId": 3,
+    "keyy": "notification"
+},
+{
+    "id": 37,
+    "name": "查验任务管理",
+    "type": "页面",
+    "iconType": "schedule",
+    "parentId": 3,
+    "keyy": "task"
+},
+{
+    "id": 38,
+    "name": "查验结果",
+    "type": "页面",
+    "iconType": "exception",
+    "parentId": 3,
+    "keyy": "result"
+},
+{
+    "id": 39,
+    "name": "留言列表",
+    "type": "页面",
+    "iconType": "solution",
+    "parentId": 12,
+    "keyy": "list"
+},
+{
+    "id": 40,
+    "name": "运营订单管理",
+    "type": "页面",
+    "iconType": "bars",
+    "parentId": 1,
+    "keyy": "query"
+},
+{
+    "id": 41,
+    "name": "企业运输任务单",
+    "type": "页面",
+    "iconType": "mail",
+    "parentId": 2,
+    "keyy": "task"
+},
+{
+    "id": 42,
+    "name": "测试",
+    "type": "页面",
+    "iconType": "mail",
+    "parentId": 13,
+    "keyy": "task"
+}
+]
